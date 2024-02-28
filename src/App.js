@@ -7,7 +7,7 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 function App() {
   return (
-    <Router>
+    <Router basename="/react-project">
       <div className="app">
         <Switch>
           <Route path="/login">
