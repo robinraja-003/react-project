@@ -1,0 +1,171 @@
+#footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #232f3e;
+  color: #fff;
+  padding: 20px;
+  /* width: 100%; */
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.languages {
+  flex: 0 1 100%;
+}
+
+#language {
+  padding: 5px;
+}
+
+.internation-sites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.internation-sites p {
+  margin-right: 10px;
+}
+
+.amazon-logo img {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.content-section {
+  flex: 1 1 300px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section p:last-child {
+  margin-bottom: 0;
+}
+
+.content-section a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.content-section a:hover {
+  color: #fff;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section p:last-child {
+  margin-bottom: 0;
+}
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 100%; */
+  background-color: #232f3e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer-copyright {
+  background-color: #232f3e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.footer-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  background-color: #232f3e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (max-width: 430px) {
+  #footer {
+    width: 105.9%;
+  }
+  .footer-section {
+    flex: 1 1 100%;
+    margin: 5px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .footer-section p {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+
+  .languages {
+    flex-basis: 100%;
+  }
+
+  .internation-sites {
+    justify-content: center;
+  }
+
+  .internation-sites p {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .amazon-logo img {
+    width: 80px;
+  }
+
+  .content-section {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 112%;
+  }
+
+  .footer-middle {
+    padding: 10px;
+    width: 112%;
+  }
+
+  .footer-copyright {
+    padding: 10px;
+    width: 112%;
+  }
+}

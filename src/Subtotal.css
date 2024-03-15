@@ -27,3 +27,12 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: black;
 }
+@media screen and (max-width: 768px) {
+  .subtotal {
+    width: auto;
+    height: auto;
+  }
+  .subtotal > button {
+    height: auto;
+  }
+}

@@ -13,3 +13,33 @@
   padding: 10px;
   border-bottom: 1px solid lightgray;
 }
+/* @media screen and (max-width: 768px) {
+  .checkout_ad {
+    display: none;
+  }
+  .checkout {
+    width: 100%;
+  }
+  .checkout_right {
+    display: none;
+  }
+ 
+} */
+@media screen and (max-width: 768px) {
+  .checkout_ad {
+    display: none; /* Hide the ad section on smaller screens */
+  }
+
+  .checkout {
+    /* flex-direction: column;  */
+    padding: 10px; /* Adjust padding for smaller screens */
+    width: 111.9%;
+  }
+
+  .checkout_title {
+    margin: 0; /* Remove margin and padding for tighter layout */
+    padding: 0;
+    border: none; /* Remove border for tighter layout */
+    margin-bottom: 10px; /* Add margin bottom for separation */
+  }
+}
