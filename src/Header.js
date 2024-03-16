@@ -46,7 +46,7 @@ function Header() {
           }}
         >
           <div className="header_option hideOnMobile ">
-            <span className="header_optionLineOne">To Create New Account </span>
+            <span className="header_optionLineOne">Create New Account </span>
             <span className="header_optionLineTwo">Sign Up</span>
           </div>
         </Link>
@@ -93,7 +93,6 @@ function Header() {
       </div>
       <nav>
         <ul className="sidebar">
-          
           <li>
             <FontAwesomeIcon
               icon={faXmark}

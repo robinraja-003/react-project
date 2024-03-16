@@ -68,76 +68,74 @@ function Footer() {
             <a href="#">Terms of Service</a>
           </p>
         </div>
-      </div>
-      {/* <hr /> */}
-      <div class="footer-flex">
-        <div class="footer-section amazon-logo">
-          <img
-            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt="Amazon Logo"
-            onClick={scrollToTop}
-          />
-        </div>
 
-        <div class="footer-section languages">
-          <h3>Languages</h3>
-          <label for="language">Select Language:</label>
-          <select id="language" name="language">
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
-            <option value="french">French</option>
-            <option value="german">German</option>
-            <option value="italian">Italian</option>
-          </select>
+        <div class="footer-flex">
+          <div class="footer-section amazon-logo">
+            <img
+              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt="Amazon Logo"
+              onClick={scrollToTop}
+            />
+          </div>
+
+          <div class="footer-section languages">
+            <h3>Languages</h3>
+            <label for="language">Select Language:</label>
+            <select id="language" name="language">
+              <option value="english">English</option>
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="german">German</option>
+              <option value="italian">Italian</option>
+            </select>
+          </div>
         </div>
-      </div>
-      {/* <hr /> */}
-      <div class="footer-middle">
-        <div class="footer-section content-section">
-          <h3>Amazon Services</h3>
-          <p>
-            <a href="#">AbeBooks</a>
-          </p>
-          <p>Books, art & collectibles</p>
-          <p>
-            <a href="#">Amazon Web Services</a>
-          </p>
-          <p>Scalable Cloud Computing Services</p>
-          <p>
-            <a href="#">Audible</a>
-          </p>
-          <p>Download Audio Books</p>
-          <p>
-            <a href="#">IMDb</a>
-          </p>
-          <p>Movies, TV & Celebrities</p>
+        <div class="footer-middle">
+          <div class="footer-section content-section">
+            <h3>Amazon Services</h3>
+            <p>
+              <a href="#">AbeBooks</a>
+            </p>
+            <p>Books, art & collectibles</p>
+            <p>
+              <a href="#">Amazon Web Services</a>
+            </p>
+            <p>Scalable Cloud Computing Services</p>
+            <p>
+              <a href="#">Audible</a>
+            </p>
+            <p>Download Audio Books</p>
+            <p>
+              <a href="#">IMDb</a>
+            </p>
+            <p>Movies, TV & Celebrities</p>
+          </div>
+          <div class="footer-section content-section">
+            <h3>More Amazon Sites</h3>
+            <p>
+              <a href="#">Shopbop</a>
+            </p>
+            <p>Designer Fashion Brands</p>
+            <p>
+              <a href="#">Amazon Business</a>
+            </p>
+            <p>Everything For Your Business</p>
+            <p>
+              <a href="#">Prime Now</a>
+            </p>
+            <p>2-Hour Delivery on Everyday Items</p>
+            <p>
+              <a href="#">Amazon Prime Music</a>
+            </p>
+            <p>100 million songs, ad-free</p>
+            <p>Over 15 million podcast episodes</p>
+          </div>
         </div>
-        <div class="footer-section content-section">
-          <h3>More Amazon Sites</h3>
-          <p>
-            <a href="#">Shopbop</a>
-          </p>
-          <p>Designer Fashion Brands</p>
-          <p>
-            <a href="#">Amazon Business</a>
-          </p>
-          <p>Everything For Your Business</p>
-          <p>
-            <a href="#">Prime Now</a>
-          </p>
-          <p>2-Hour Delivery on Everyday Items</p>
-          <p>
-            <a href="#">Amazon Prime Music</a>
-          </p>
-          <p>100 million songs, ad-free</p>
-          <p>Over 15 million podcast episodes</p>
-        </div>
-      </div>
-      {/* <hr /> */}
-      <div class="footer-copyright">
-        <div class="footer-section">
-          <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads</p>
-          <p>&copy; 2024 Amazon, Amazon.com, Inc. or its affiliates</p>
+        <div class="footer-copyright">
+          <div class="footer-section">
+            <p>Conditions of Use & Sale Privacy Notice Interest-Based Ads</p>
+            <p>&copy; 2024 Amazon, Amazon.com, Inc. or its affiliates</p>
+          </div>
         </div>
       </div>
     </>
