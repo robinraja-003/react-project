@@ -136,9 +136,9 @@ nav a {
     width: 100%;
   }
   .header {
-    width: 100%; 
+    width: 100%;
     justify-content: space-between;
-     padding: 0 10px;
+    padding: 0 10px;
   }
 
   .menuBar {
@@ -182,7 +182,7 @@ nav a {
   .header {
     width: 100%;
     justify-content: space-between;
-    padding: 0 35px;
+    padding: 0 37px;
   }
   .header_searchInput {
     width: 100%;
@@ -194,5 +194,12 @@ nav a {
   }
   .header_optionBag {
     margin-left: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 45px;
   }
 }

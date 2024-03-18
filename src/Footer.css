@@ -114,7 +114,13 @@
 }
 @media screen and (max-width: 430px) {
   #footer {
-    width: 108%;
+    width: 118%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-flex {
+    width: 100%;
   }
   .footer-section {
     flex: 1 1 100%;
@@ -157,16 +163,26 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 112%;
+    width: 100%;
   }
 
   .footer-middle {
     padding: 10px;
-    width: 112%;
+    width: 100%;
   }
 
   .footer-copyright {
     padding: 10px;
-    width: 112%;
+    width: 100%;
   }
+}
+@media screen and (max-width: 768px) {
+  /* #footer {
+    width: 105%;
+  } */
+}
+@media screen and (max-width: 1024px) {
+  /* #footer {
+    width: 104%;
+  } */
 }
