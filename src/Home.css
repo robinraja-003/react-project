@@ -3,8 +3,11 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
-
+.home_container {
+  position: relative;
+}
 .home_row {
   display: flex;
   z-index: 1;
@@ -15,13 +18,61 @@
 .home_image {
   width: 103.3%;
   height: auto;
-  z-index: -1;
   object-fit: cover;
   margin-bottom: -250px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  ) !important;
 }
+
 .imageBanner {
   width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 500%;
+  display: flex;
+  transition: left 10s linear;
+  animation: carouselAnimation 20s infinite;
+  position: relative;
+  left: 0;
+}
+
+.slide {
+  width: 20%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+@keyframes carouselAnimation {
+  0% {
+    left: 0;
+  }
+  33.333% {
+    left: 0;
+  }
+  50% {
+    left: -100%;
+  }
+  66.666% {
+    left: -100%;
+  }
+  83.333% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,20 +99,34 @@
     margin-left: -15px;
     margin-right: -15px;
   }
-  .imageBanner {
-    /* width: 100%; */
+  .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-inner {
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 430px) {
   .home_image {
-    width: calc(100% + 85px);
+    width: calc(100% + 90px);
     margin-left: -15px;
     margin-right: -15px;
   }
   .imageBanner {
     /* width: 118%; */
     margin-left: 5px;
+  }
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  .carousel-inner {
+    width: 100%;
   }
 }
 
@@ -73,8 +138,16 @@
     margin-right: 0px;
   }
   .home_image {
-    width: calc(100% + 105px);
+    width: calc(100% + 100px);
     margin-left: -15px;
     margin-right: -15px;
+  }
+  .carousel {
+    overflow: hidden;
+    width: 123%;
+    position: relative;
+  }
+  .carousel-inner {
+    width: 500%;
   }
 }

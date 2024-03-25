@@ -6,11 +6,32 @@ function Home() {
     <>
       <div className="home">
         <div className="home_container">
-          <img
-            className="home_image"
-            src=" https://images-eu.ssl-images-amazon.com/images/G/31/img16/malar/EBDFeb/RevisedEBD/3000x1200_set1._CB581582491_.jpg"
-            alt=""
-          />
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div className="slide">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Holi24/GW/Holi24_GW_PC_H1_2x._CB579546797_.jpg"
+                  alt="Slide 1"
+                  className="home_image"
+                />
+              </div>
+              <div className="slide">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/March/unrec/Holi/Bandhan/299_PC_3000._CB579544309_.jpg"
+                  alt="Slide 2"
+                  className="home_image"
+                />
+              </div>
+              <div className="slide">
+                <img
+                  src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/augatf23/holihsbc/MA_2x._CB579580239_.jpg"
+                  alt="Slide 3"
+                  className="home_image"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="home_row">
             <Product
               id="89201992"

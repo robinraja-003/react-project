@@ -7,7 +7,11 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import Footer from "./Footer";
 import Signup from "./Signup";
-
+import Men from "./Men";
+import Women from "./Women";
+import Sneakers from "./Sneakers";
+import Watches from "./Watches";
+import Electronics from "./Electronics";
 
 function App() {
   return (
@@ -24,6 +28,32 @@ function App() {
           <Route path="/signup">
             <Signup />
           </Route>
+
+          <Route path="/men">
+            <Header />
+            <Men />
+          </Route>
+
+          <Route path="/women">
+            <Header />
+            <Women />
+          </Route>
+
+          <Route path="/sneakers">
+            <Header />
+            <Sneakers />
+          </Route>
+
+          <Route path="/watches">
+            <Header />
+            <Watches />
+          </Route>
+
+          <Route path="/electronics">
+            <Header />
+            <Electronics />
+          </Route>
+
           <Route path="/">
             <Header />
             <Home />

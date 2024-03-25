@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
   faBars,
   faXmark,
+  faFilter,
 } from "@fortawesome/free-solid-svg-icons";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { Link, useLocation } from "react-router-dom";
@@ -16,16 +17,54 @@ function Header() {
 
   function toggleSidebar() {
     const sidebar = document.querySelector(".sidebar");
-    sidebar.style.display = "flex";
+    const filterbar = document.querySelector(".filterbar");
+
+    // Hide filterbar if it's displayed
+    if (filterbar.style.display === "flex") {
+      filterbar.style.display = "none";
+    }
+
+    // Toggle sidebar display
+    sidebar.style.display = sidebar.style.display === "flex" ? "none" : "flex";
   }
 
   function hideSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = "none";
   }
+  function toggleFilterbar() {
+    const filterbar = document.querySelector(".filterbar");
+    if (filterbar.style.display === "flex") {
+      // If filter bar is already displayed, hide it
+      filterbar.style.display = "none";
+    } else {
+      // Otherwise, show the filter bar
+      filterbar.style.display = "flex";
+    }
+  }
+
   useEffect(() => {
     if (location.pathname === "/checkout") {
       hideSidebar();
+    }
+  }, [location.pathname]);
+  function hideFilterbar() {
+    const filterbar = document.querySelector(".filterbar");
+    filterbar.style.display = "none";
+  }
+  useEffect(() => {
+    if (
+      location.pathname === "/checkout" ||
+      location.pathname === "/cart" ||
+      location.pathname === "/men" ||
+      location.pathname === "/women" ||
+      location.pathname === "/sneakers" ||
+      location.pathname === "/watches" ||
+      location.pathname === "/electronics" ||
+      location.pathname === "/"
+    ) {
+      hideSidebar();
+      hideFilterbar();
     }
   }, [location.pathname]);
 
@@ -57,6 +96,12 @@ function Header() {
             icon={faMagnifyingGlass}
             className="header_searchIcon"
           />
+        </div>
+        <div className="fiter" onClick={toggleFilterbar}>
+          <span className="filter_option">Filter</span>
+          <span className="filter_icon">
+            <FontAwesomeIcon icon={faFilter} />
+          </span>
         </div>
 
         <div className="header_nav">
@@ -108,6 +153,25 @@ function Header() {
           </li>
           <li>
             <Link to="/checkout">Cart</Link>
+          </li>
+        </ul>
+      </nav>
+      <nav>
+        <ul className="filterbar">
+          <li>
+            <Link to="/men">Men</Link>
+          </li>
+          <li>
+            <Link to="/women">Women</Link>
+          </li>
+          <li>
+            <Link to="/sneakers">Sneakers</Link>
+          </li>
+          <li>
+            <Link to="/watches">Watches</Link>
+          </li>
+          <li>
+            <Link to="/electronics">Electronics</Link>
           </li>
         </ul>
       </nav>
