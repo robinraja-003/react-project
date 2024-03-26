@@ -19,39 +19,49 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/login">
+            <Header />
             <Login />
+            <Footer />
           </Route>
           <Route path="/checkout">
             <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path="/signup">
+            <Header />
             <Signup />
+            <Footer />
           </Route>
 
           <Route path="/men">
             <Header />
             <Men />
+            <Footer />
           </Route>
 
           <Route path="/women">
             <Header />
             <Women />
+            <Footer />
           </Route>
 
           <Route path="/sneakers">
             <Header />
             <Sneakers />
+            <Footer />
           </Route>
 
           <Route path="/watches">
             <Header />
             <Watches />
+            <Footer />
           </Route>
 
           <Route path="/electronics">
             <Header />
             <Electronics />
+            <Footer />
           </Route>
 
           <Route path="/">

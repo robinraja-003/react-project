@@ -234,7 +234,7 @@ nav a {
   .header {
     width: 100%;
     justify-content: space-between;
-    padding: 0 37px;
+    padding: 0 45px;
   }
   .header_searchInput {
     width: 100%;
@@ -248,10 +248,10 @@ nav a {
     margin-left: 10px;
   }
 }
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .header {
     width: 100%;
     justify-content: space-between;
-    padding: 0 45px;
+    padding: 0 50px;
   }
-}
+} */
